@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: header;
+	src:url("Chalisa Octavia.otf");
+}
+
+@font-face{
+	font-family: subheader;
+    src:url("Valentine Love.ttf");
+}
+
+:root {
+  --DarkGreen : #006853;
+  --LightGreen : #93D500;
+  --transparent: rgba(0, 0, 0, 0.623);
+  --sectionSpace : 7%;
+}
+
+body{
+  width: 100%;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color: var(--LightGreen);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--DarkGreen);
+}
+
+/* Navbar */
+.navbar-dark {
+  height: 120px;
+  background-color: var(--DarkGreen);
+  border-bottom: solid var(--LightGreen) 5px;
+}
+
+/* End of Navbar */
+
+.header-image {
+  object-fit: cover;
+  height: 90vh;
+  width: 100vw;
+}
+
+.carousel-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent);
+}
+
+.carousel-caption {
+  text-align: left;
+}
+/* End of Header */
+
+
+/* About */
+#about {
+  position: relative;
+  width: 90%;
+  align-content: center;
+  margin: auto;
+  padding-top: var(--sectionSpace);
+}
+
+.card-img-top {
+  display: inline-block;
+  max-width: 25%;
+  max-height: 25%;
+  align-content: center;
+  margin: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  border: none;
+}
+.card-title {
+  text-align: center;
+  background-color: var(--DarkGreen);
+  color: white;
+}
+
+.card-body {
+  background-color: white;
+}
+
+.align-with-others {
+  padding-top: 5%;
+}
+/* End Of About */
+
+
+/* Events */
+#events {
+  padding-top: var(--sectionSpace);
+}
+
+/* End Of Events */
+
+
+/* Join */
+#join {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: var(--sectionSpace);
+}
+
+.map {
+  padding-bottom:56.25%; 
+  position:relative; 
+  display:block; 
+  width: 100%;
+}
+
+iframe {
+  position:absolute;
+  top:0;
+  left: 0;
+}
+
+.joinForm {
+  top: 25%;
+  right: 0;
+  position: absolute;
+  width: 25%;
+  height: auto;
+  display: block;
+  float: right;
+  margin-right: 8%;
+  background-color: var(--DarkGreen);
+  color: white;
+  border: solid var(--LightGreen) 5px;
+}
+
+.panel-heading > h4 {
+  color: white;
+}
+
+.panel {
+  margin: 5%;
+}
+
+.panel-heading {
+  font-size: larger;
+}
+
+.button {
+  font: bold 14px;
+  text-decoration: none;
+  background-color: var(--DarkGreen);
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid var(--LightGreen);
+  border-right: 1px solid var(--LightGreen);
+  border-bottom: 1px solid var(--LightGreen);
+  border-left: 1px solid var(--LightGreen);
+}
+
+/* -- Commenting out due to not having dns and email service setup
+.joinForm {
+  top: 10%;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  display: block;
+  float: right;
+  margin-right: 8%;
+  background-color: var(--DarkGreen);
+  color: white;
+  border: solid var(--LightGreen) 5px;
+}
+
+.panel-heading > h4 {
+  color: white;
+}
+
+.panel {
+  margin: 5%;
+}
+
+.form-check {
+  margin-left: 5%;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.panel-heading {
+  font-size: larger;
+}
+
+.alert {
+  display: none;
+}
+
+.error {
+  color: #e74c3c;
+}
+*/
+/* End of Join*/
+
+
+/* Footer */
+
+.footer {
+  border-top: solid var(--LightGreen) 5px;
+  background-color: var(--DarkGreen);
+  color: white;
+  width: 100%;
+  height: auto;
+  padding-top: var(--sectionSpace);
+}
+
+.bottom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.navFooter {
+  margin-left: 30%;
+  width: 25%;
+  height: 25%;
+  border: none;
+  text-align: center;
+} 
+
+.social {
+  text-align: center;
+  top:0;
+  right: 0;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: block;
+  float: left;
+  margin-right: 30%;
+}
+
+.copyright {
+  margin-top: 1%;
+  width: 100%;
+  text-align: center;
+}
+/* End Of Footer */
+
+/* Thank you page */
+#thanks {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    align-content: center;
+    margin: auto;
+    padding-bottom: auto;
+    padding-top: 2%;
+  }
+
+#thanks > a {
+    color:var(--DarkGreen);
+  }
+  
+#thanks > a:hover {
+    color: var(--LightGreen);
+  }
