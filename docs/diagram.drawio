@@ -4,6 +4,9 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="31" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="14" y="50" width="570" height="730" as="geometry"/>
+                </mxCell>
                 <mxCell id="2" value="" style="rounded=1;arcSize=10;dashed=0;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="30" y="80" width="540" height="580" as="geometry"/>
                 </mxCell>
@@ -65,16 +68,16 @@
                 <mxCell id="22" value="Amazon Cert Mgr" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.certificate_manager_2;fillColor=#759C3E;gradientColor=none;" parent="1" vertex="1">
                     <mxGeometry x="243" y="120" width="70" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="2" style="edgeStyle=none;html=1;" edge="1" parent="1" source="24" target="10">
+                <mxCell id="25" value="2" style="edgeStyle=none;html=1;" parent="1" source="24" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="1" style="edgeStyle=none;html=1;entryX=0.29;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="24" target="16">
+                <mxCell id="26" value="1" style="edgeStyle=none;html=1;entryX=0.29;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;" parent="1" source="24" target="16" edge="1">
                     <mxGeometry x="-0.1737" relative="1" as="geometry">
                         <mxPoint x="383" y="727.75" as="targetPoint"/>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.web_browser;" vertex="1" parent="1">
+                <mxCell id="24" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.web_browser;" parent="1" vertex="1">
                     <mxGeometry x="253" y="710" width="50" height="35.5" as="geometry"/>
                 </mxCell>
             </root>
