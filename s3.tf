@@ -44,17 +44,68 @@ resource "aws_s3_bucket_website_configuration" "isc2wichitachapter_org" {
   }
 }
 
-resource "aws_s3_object" "object" {
+#resource "aws_s3_object" "object" {
+#  bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
+#  key    = "index.html"
+#  acl    = "public-read"
+#  source = "files/index.html"
+#  etag = filemd5("files/index.html")
+#  content_type = "text/html"
+#  depends_on = [
+#    aws_s3_bucket.isc2wichitachapter_org
+#  ]
+#}
+
+resource "aws_s3_object" "html_object" {
+  for_each = fileset("./files/", "**.html")
   bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
-  key    = "index.html"
-  acl    = "public-read"
-  source = "files/index.html"
-  etag = filemd5("files/index.html")
+  key = each.value
+  source = "./files/${each.value}"
+  etag = filemd5("./files/${each.value}")
   content_type = "text/html"
-  depends_on = [
-    aws_s3_bucket.isc2wichitachapter_org
-  ]
+  acl    = "public-read"
 }
+
+resource "aws_s3_object" "css_object" {
+  for_each = fileset("./files/", "*.css")
+  bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
+  key = each.value
+  source = "./files/${each.value}"
+  etag = filemd5("./files/${each.value}")
+  content_type = "text/css"
+  acl    = "public-read"
+}
+
+resource "aws_s3_object" "svg_object" {
+  for_each = fileset("./files/", "**/*.svg")
+  bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
+  key = each.value
+  source = "./files/${each.value}"
+  etag = filemd5("./files/${each.value}")
+  content_type = "image/svg+xml"
+  acl    = "public-read"
+}
+
+resource "aws_s3_object" "png_object" {
+  for_each = fileset("./files/", "**/*.png")
+  bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
+  key = each.value
+  source = "./files/${each.value}"
+  etag = filemd5("./files/${each.value}")
+  content_type = "image/png"
+  acl    = "public-read"
+}
+
+resource "aws_s3_object" "jpeg_object" {
+  for_each = fileset("./files/", "**/*.jpeg")
+  bucket = aws_s3_bucket.isc2wichitachapter_org.bucket
+  key = each.value
+  source = "./files/${each.value}"
+  etag = filemd5("./files/${each.value}")
+  content_type = "image/jpeg"
+  acl    = "public-read"
+}
+
 
 ## Other resources will be uploaded manually
 
