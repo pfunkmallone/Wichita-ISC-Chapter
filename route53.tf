@@ -16,7 +16,7 @@ resource "aws_route53_record" "isc2ictchapter_org" {
 
   alias {
       evaluate_target_health = false
-      name = "d1b8tfexf0vh8a.cloudfront.net"
+      name = aws_cloudfront_distribution.s3_distribution.domain_name
       zone_id = "Z2FDTNDATAQYW2"
   }
 }
@@ -49,7 +49,7 @@ resource "aws_route53_record" "isc2wichitachapter_org" {
 
   alias {
       evaluate_target_health = false
-      name = "d1b8tfexf0vh8a.cloudfront.net"
+      name = aws_cloudfront_distribution.s3_distribution.domain_name
       zone_id = "Z2FDTNDATAQYW2"
   }
 }
@@ -82,7 +82,7 @@ resource "aws_route53_record" "isc2ictchapter_com" {
 
   alias {
       evaluate_target_health = false
-      name = "d1b8tfexf0vh8a.cloudfront.net"
+      name = aws_cloudfront_distribution.s3_distribution.domain_name
       zone_id = "Z2FDTNDATAQYW2"
   }
 }
@@ -115,7 +115,7 @@ resource "aws_route53_record" "isc2wichitachapter_com" {
 
   alias {
       evaluate_target_health = false
-      name = "d1b8tfexf0vh8a.cloudfront.net"
+      name = aws_cloudfront_distribution.s3_distribution.domain_name
       zone_id = "Z2FDTNDATAQYW2"
   }
 }
